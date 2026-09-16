@@ -1,0 +1,9 @@
+# Die Rechtstext-Seiten sind fertig gebaut, gehen aber noch NICHT online:
+# Im Impressum fehlen Name und ladungsfähige Anschrift (§ 5 DDG), und ein
+# Impressum mit Platzhaltern ist schlechter als noch keins.
+#
+# Zum Veröffentlichen: diese drei Zeilen löschen und im Footer von index.html
+# die auskommentierten Links wieder einkommentieren.
+datenschutz.html
+nutzungsbedingungen.html
+impressum.html
