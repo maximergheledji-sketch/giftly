@@ -53,14 +53,16 @@
     .feat.flip{direction:rtl}
     .feat.flip>*{direction:ltr}
     .feat-img{display:flex;justify-content:center}
+    /* Zwei Aufnahmen nebeneinander in einer Feature-Spalte. Das .phones aus
+       dem Hero bringt einen Außenabstand mit, den es hier nicht braucht. */
+    .feat-img .phones{margin-top:0;gap:14px}
+    .phone.small{width:168px}
     .feat-text .label{font-size:11px;letter-spacing:.07em;color:var(--mid);margin-bottom:14px;font-weight:400}
     .feat-text h3{font-size:clamp(26px,3.2vw,40px);font-weight:600;letter-spacing:-1.2px;line-height:1.1;margin-bottom:16px}
     .feat-text p{font-size:15px;color:var(--mid);line-height:1.78;font-weight:300;max-width:400px}
 
     /* Solange keine Screenshots eingebunden sind, laufen die Feature-Blöcke
        einspaltig und mittig — sonst klafft die halbe Seite leer. */
-    .feat.textonly{grid-template-columns:1fr;gap:0;max-width:640px;margin:0 auto 72px;text-align:center}
-    .feat.textonly .feat-text p{max-width:520px;margin:0 auto}
 
     .how{padding:80px 0}
     .how-label{font-size:11px;letter-spacing:.07em;color:var(--mid);margin-bottom:14px}
@@ -112,12 +114,9 @@
   </div>
   <p class="beta">Gyft ist in der geschlossenen Beta — noch ohne öffentliche Anmeldung.</p>
 
-  <!-- SCREENSHOT-SLOT „Swipe-Screen". Sobald ein aktueller Screenshot vorliegt,
-       diesen Block einkommentieren und die Datei unter assets/ ablegen:
   <div class="phones">
-    <div class="phone solo"><img src="/assets/swipe.jpg" alt="Der Swipe-Screen von Gyft: eine Produktkarte mit den Knöpfen „Passt zu mir“ und „Passt nicht“." /></div>
+    <div class="phone solo"><img src="/assets/swipe.jpg" width="720" height="1458" alt="Der Swipe-Screen von Gyft: eine Produktkarte mit Bild, Name und Preis, darunter die Knöpfe „Passt zu mir“ und „Passt nicht“." /></div>
   </div>
-  -->
 </section>
 
 <hr class="divider"/>
@@ -125,9 +124,13 @@
 <div class="wrap">
   <div class="features">
 
-    <!-- SCREENSHOT-SLOT: <div class="feat-img"><div class="phone single"><img src="/assets/swipe.jpg" alt="…"/></div></div>
-         einfügen und die Klasse „textonly" entfernen. -->
-    <div class="feat textonly">
+    <div class="feat">
+      <div class="feat-img">
+        <div class="phones">
+          <div class="phone small"><img src="/assets/swipe-geste.jpg" width="720" height="1458" loading="lazy" alt="Eine Produktkarte wird nach rechts gewischt, auf der Karte erscheint der grüne Stempel „Passt“." /></div>
+          <div class="phone small"><img src="/assets/ki-frage.jpg" width="720" height="1458" loading="lazy" alt="Eine Profilfrage im Kartenstapel: „Welche Aktivitäten magst du neben dem Gym noch zum Entspannen?“ mit Antwortmöglichkeiten." /></div>
+        </div>
+      </div>
       <div class="feat-text">
         <p class="label">Entdecken</p>
         <h3>Swipen statt suchen.</h3>
@@ -135,8 +138,10 @@
       </div>
     </div>
 
-    <!-- SCREENSHOT-SLOT: Freundesprofil (Wunschliste + „Bereits reserviert") -->
-    <div class="feat textonly">
+    <div class="feat flip">
+      <div class="feat-img">
+        <div class="phone single"><img src="/assets/profil.jpg" width="720" height="1458" loading="lazy" alt="Das Profil eines Freundes mit Interessen, Geburtstags-Erinnerung, dem Hinweis auf die anonyme Reservierung und Geschenkvorschlägen zum Reservieren." /></div>
+      </div>
       <div class="feat-text">
         <p class="label">Geschenk finden</p>
         <h3>Kein Rätselraten mehr.</h3>
@@ -144,8 +149,10 @@
       </div>
     </div>
 
-    <!-- SCREENSHOT-SLOT: Nachrichten + Events -->
-    <div class="feat textonly">
+    <div class="feat">
+      <div class="feat-img">
+        <div class="phone single"><img src="/assets/events.jpg" width="720" height="1458" loading="lazy" alt="Ein Event in Gyft: Geburtstagsparty mit Datum, Ort, Gästeliste und der Wichtel-Auslosung." /></div>
+      </div>
       <div class="feat-text">
         <p class="label">Events &amp; Nachrichten</p>
         <h3>Gemeinsam schenken, einfach koordiniert.</h3>
