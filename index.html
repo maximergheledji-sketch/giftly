@@ -95,6 +95,12 @@
       .feat.flip{direction:ltr}
       .steps{grid-template-columns:1fr}
       .phone.duo{width:100%;max-width:420px}
+      /* Zwei Aufnahmen nebeneinander muessen auf JEDES Telefon passen. Mit
+         festen 168px brauchen sie samt Abstand und Seitenrand 398px und
+         liefen ab 374px ueber — ein 360px breites Android haette die Seite
+         seitlich scrollbar gemacht. Jetzt teilen sie sich die Spalte. */
+      .feat-img .phones{width:100%}
+      .phone.small{width:calc((100% - 14px)/2);max-width:168px}
       footer{flex-direction:column;padding:20px;text-align:center}
       .f-links{justify-content:center}
     }
@@ -127,12 +133,15 @@
 
     <div class="feat">
       <div class="feat-img">
-        <div class="phone single"><img src="/assets/ki-frage.jpg" width="720" height="1456" loading="lazy" alt="Eine Profilfrage im Kartenstapel: „Welche Küche kochst du am liebsten?“ mit Antwortmöglichkeiten zum Auswählen." /></div>
+        <div class="phones">
+          <div class="phone small"><img src="/assets/swipe-stapel.jpg" width="720" height="1456" loading="lazy" alt="Der Kartenstapel in Gyft: zwei Produktkarten übereinander mit Bild, Kategorie, Name und Preis; die obere ist mit einem Herz als „Passt zu mir“ markiert." /></div>
+          <div class="phone small"><img src="/assets/ki-frage.jpg" width="720" height="1456" loading="lazy" alt="Eine Profilfrage im Kartenstapel: „Welche Küche kochst du am liebsten?“ mit Antwortmöglichkeiten zum Auswählen." /></div>
+        </div>
       </div>
       <div class="feat-text">
         <p class="label">Entdecken</p>
         <h3>Swipen statt suchen.</h3>
-        <p>Eine Produktkarte nach der anderen. Rechts für „Passt zu mir“, links für „Passt nicht“ — und was dir gefällt, sehen deine Freunde. Die Reihenfolge stellt eine KI aus deinem Profil zusammen; filtern kannst du nach Stichwörtern, Preis und Interessen.</p>
+        <p>Eine Produktkarte nach der anderen. Rechts für „Passt zu mir“, links für „Passt nicht“ — und was dir gefällt, sehen deine Freunde. Die Reihenfolge stellt eine KI aus deinem Profil zusammen, und zwischendurch stellt sie dir eine kurze Frage: Jede Antwort macht die nächsten Vorschläge treffender. Filtern kannst du nach Stichwörtern, Preis und Interessen.</p>
       </div>
     </div>
 
@@ -153,8 +162,8 @@
       </div>
       <div class="feat-text">
         <p class="label">Events &amp; Nachrichten</p>
-        <h3>Gemeinsam schenken, einfach koordiniert.</h3>
-        <p>Plane Geburtstage, Wichteln und Gruppengeschenke. Koordiniere direkt in der App, wer was übernimmt — ohne endlose Gruppenchats.</p>
+        <h3>Feiern planen, Wichteln auslosen.</h3>
+        <p>Lege Geburtstage und Feiern an, lade deinen Kreis ein und sieh, wer zugesagt hat. Fürs Wichteln lost Gyft aus — jeder erfährt nur, wen er selbst beschenkt. Die Absprachen laufen im Chat zum Event, nicht in drei verschiedenen Gruppen.</p>
       </div>
     </div>
 
