@@ -1,9 +1,10 @@
-# Die Rechtstext-Seiten sind fertig gebaut, gehen aber noch NICHT online:
-# Im Impressum fehlen Name und ladungsfähige Anschrift (§ 5 DDG), und ein
-# Impressum mit Platzhaltern ist schlechter als noch keins.
+# Die Rechtstext-Seiten sind seit dem 29.09.2026 vollständig und ONLINE:
+# Name und ladungsfähige Anschrift stehen eingetragen (Maxim Ergheledji,
+# Gartenstraße 13, 35633 Lahnau). Sie werden aus lib/legal.ts im App-Repo
+# erzeugt — nach jeder Änderung dort `npm run build:legal -- ../gyftapp-de`
+# laufen lassen, sonst laufen App und Webseite auseinander.
 #
-# Zum Veröffentlichen: diese drei Zeilen löschen und im Footer von index.html
-# die auskommentierten Links wieder einkommentieren.
-datenschutz.html
-nutzungsbedingungen.html
-impressum.html
+# Hier stand bis zum 29.09. ein Ausschluss für datenschutz.html,
+# nutzungsbedingungen.html und impressum.html. Nicht wieder eintragen:
+# Play Console und App Store Connect brauchen die Datenschutz-URL, bevor sich
+# ein Test-Track freigeben lässt.
