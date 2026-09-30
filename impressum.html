@@ -6,6 +6,7 @@
   <meta name="robots" content="index, follow" />
   <title>Impressum — Gyft</title>
   <meta name="description" content="Impressum der Gyft-App." />
+  <link rel="icon" href="/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -16,7 +17,8 @@
     body{background:var(--white);color:var(--black);font-family:'Inter',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
     nav{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;
         padding:18px 48px;background:rgba(255,255,255,.94);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
-    .nav-logo{font-size:17px;font-weight:600;color:var(--black);text-decoration:none;letter-spacing:-.2px}
+    .nav-logo{font-size:17px;font-weight:600;color:var(--black);text-decoration:none;letter-spacing:-.2px;display:inline-flex;align-items:center;gap:7px}
+    .mark{flex:none}
     .nav-back{font-size:13px;color:var(--mid);text-decoration:none}
     .nav-back:hover{color:var(--black)}
     main{max-width:720px;margin:0 auto;padding:64px 24px 88px}
@@ -33,7 +35,7 @@
     mark.ph{background:#ffe9a8;color:#5c4600;padding:0 4px;border-radius:3px;font-weight:500}
     footer{border-top:1px solid var(--border);padding:28px 48px;display:flex;align-items:center;
            justify-content:space-between;flex-wrap:wrap;gap:14px}
-    .f-logo{font-size:15px;font-weight:600}
+    .f-logo{font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:6px}
     .f-links{display:flex;gap:24px;flex-wrap:wrap}
     .f-links a{font-size:12px;color:var(--mid);text-decoration:none}
     .f-links a:hover{color:var(--black)}
@@ -44,7 +46,7 @@
 </head>
 <body>
   <nav>
-    <a href="/" class="nav-logo">🎁 Gyft.</a>
+    <a href="/" class="nav-logo"><svg class="mark" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 9a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1l0 -2"/><path d="M12 8l0 13"/><path d="M19 12v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0 -5a4.8 8 0 0 1 4.5 5a4.8 8 0 0 1 4.5 -5a2.5 2.5 0 0 1 0 5"/></svg>Gyft.</a>
     <a href="/" class="nav-back">← Startseite</a>
   </nav>
   <main>
@@ -71,11 +73,11 @@
       <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
   </main>
   <footer>
-    <div class="f-logo">🎁 Gyft.</div>
+    <div class="f-logo"><svg class="mark" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 9a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1l0 -2"/><path d="M12 8l0 13"/><path d="M19 12v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0 -5a4.8 8 0 0 1 4.5 5a4.8 8 0 0 1 4.5 -5a2.5 2.5 0 0 1 0 5"/></svg>Gyft.</div>
     <div class="f-links">
-      <a href="/datenschutz.html">Datenschutz</a>
-      <a href="/nutzungsbedingungen.html">Nutzungsbedingungen</a>
-      <a href="/impressum.html">Impressum</a>
+      <a href="/datenschutz">Datenschutz</a>
+      <a href="/nutzungsbedingungen">Nutzungsbedingungen</a>
+      <a href="/impressum">Impressum</a>
       <a href="mailto:support@gyftapp.de">Kontakt</a>
     </div>
     <div class="f-copy">© 2026 Gyft</div>
