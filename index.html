@@ -34,11 +34,11 @@
     .hero-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
     .btn-dark{background:var(--black);color:var(--white);padding:14px 32px;border-radius:100px;font-size:14px;font-weight:500;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:opacity .15s}
     .btn-dark:hover{opacity:.8}
-    .beta{margin-top:40px;font-size:12px;color:var(--mid);font-weight:300;border:1px solid var(--border);border-radius:100px;padding:8px 18px;background:var(--off)}
-    /* Ohne Datum. Der Beta-Start ist terminiert, die Veroeffentlichung im
-       Store nicht: Davor liegen Entwicklerkonto, erster Build und Apples
-       Review. Ein genannter Termin, der verstreicht, faellt Besuchern auf. */
-    .stores{margin-top:14px;font-size:12.5px;color:var(--mid);font-weight:300}
+    .btn-light{background:var(--white);color:var(--black);border:1px solid var(--border);padding:14px 32px;border-radius:100px;font-size:14px;font-weight:500;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:opacity .15s}
+    .btn-light:hover{opacity:.8}
+    /* Seit dem iOS-Launch (06.11.2026) statt des Beta-Hinweises. Android
+       ohne Tagesdatum: Der Termin haengt an D-U-N-S und Google-Pruefung. */
+    .stores{margin-top:22px;font-size:12.5px;color:var(--mid);font-weight:300}
 
     /* Screenshot-Rahmen. Bleibt bewusst stehen, obwohl gerade kein Bild
        eingebunden ist — s. README.md („Screenshots nachrüsten"). */
@@ -83,6 +83,8 @@
     .cta-sub{color:#8a8a8a;font-size:16px;max-width:430px;margin:0 auto 28px;font-weight:300;line-height:1.6}
     .cta a{color:var(--white);text-decoration:underline;text-underline-offset:3px}
     .cta-note{font-size:11px;color:#444;margin-top:14px}
+    .cta .btn-store{background:var(--white);color:var(--black);padding:14px 32px;border-radius:100px;font-size:14px;font-weight:500;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:opacity .15s}
+    .cta .btn-store:hover{opacity:.85}
 
     footer{border-top:1px solid var(--border);padding:28px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
     .f-logo{font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:6px}
@@ -121,10 +123,10 @@
   <h1>Wünsche,<br/>die ankommen.</h1>
   <p class="hero-sub">Erstell dein Profil, teile deine Interessen — und deine Freunde finden endlich Geschenke, die wirklich zu dir passen.</p>
   <div class="hero-btns">
-    <a href="#how" class="btn-dark">Wie es funktioniert <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="https://apps.apple.com/de/app/gyft/id6817333870" class="btn-dark"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3-.79-1.55.02-2.97.9-3.77 2.28-1.61 2.79-.41 6.92 1.16 9.18.77 1.11 1.68 2.35 2.88 2.31 1.16-.05 1.6-.75 3-.75 1.4 0 1.79.75 3.02.72 1.25-.02 2.04-1.13 2.8-2.25.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.42-.93-2.44-3.67zM14.07 5.86c.64-.78 1.07-1.85.95-2.93-.92.04-2.03.61-2.69 1.39-.59.68-1.11 1.78-.97 2.83 1.02.08 2.07-.52 2.71-1.29z"/></svg>Im App&nbsp;Store laden</a>
+    <a href="#how" class="btn-light">Wie es funktioniert <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </div>
-  <p class="beta">Gyft ist in der geschlossenen Beta — noch ohne öffentliche Anmeldung.</p>
-  <p class="stores">Demnächst im App&nbsp;Store und bei Google&nbsp;Play.</p>
+  <p class="stores">Kostenlos für iPhone. Android folgt bald bei Google&nbsp;Play.</p>
 </section>
 
 <hr class="divider"/>
@@ -219,7 +221,8 @@
 
 <section class="cta">
   <h2>Nie wieder danebenschenken.</h2>
-  <p class="cta-sub">Gyft läuft gerade als geschlossene Beta im Freundeskreis. Eine öffentliche Anmeldung gibt es noch nicht — bei Fragen erreichst du uns unter <a href="mailto:support@gyftapp.de">support@gyftapp.de</a>.</p>
+  <p class="cta-sub">Gyft ist kostenlos im App&nbsp;Store. Bei Fragen erreichst du uns unter <a href="mailto:support@gyftapp.de">support@gyftapp.de</a>.</p>
+  <a href="https://apps.apple.com/de/app/gyft/id6817333870" class="btn-store"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3-.79-1.55.02-2.97.9-3.77 2.28-1.61 2.79-.41 6.92 1.16 9.18.77 1.11 1.68 2.35 2.88 2.31 1.16-.05 1.6-.75 3-.75 1.4 0 1.79.75 3.02.72 1.25-.02 2.04-1.13 2.8-2.25.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.42-.93-2.44-3.67zM14.07 5.86c.64-.78 1.07-1.85.95-2.93-.92.04-2.03.61-2.69 1.39-.59.68-1.11 1.78-.97 2.83 1.02.08 2.07-.52 2.71-1.29z"/></svg>Im App&nbsp;Store laden</a>
 </section>
 
 <div class="affiliate">Als Amazon-Partner verdiene ich an qualifizierten Käufen.</div>
